@@ -1,10 +1,13 @@
 <h1>GB Studio 3.0.3 Animated Tiles Tutorial</h1>
 
+<img src="/help/AnimatedTiles.1.4.gif" />
 
 <p>
   This is a basic interactive how-to tutorial for animated background tiles in GBStudio 3. The source code was built using with GBS 3.0.3.<br/>
   This tutorial based on NalaFala (Yousurname)'s <a href="https://gist.github.com/Y0UR-U5ERNAME/b1cdf7f3afff6c14dfa557dc5e6b1572">Background Tile Swapping Guide for GB Studio 3</a><br/>
   But I've dumbed it down a bit for people new to GBVM, like me :)
+  
+  You can play the interactive version at <a href="https://phinioxglade.itch.io/gbstudio-3-animated-tile-tutorial">https://phinioxglade.itch.io/gbstudio-3-animated-tile-tutorial</a>
   <br/>
   <h3>We will cover the following 5 key ascepts of tile swap: </h3>
   <ul>
@@ -22,6 +25,13 @@
     <li>Adding a value to a variable</li>
   </ul>
 </p>
+
+<h3>Useful Resources:</h3>
+<ol>
+  <li><a href="https://github.com/untoxa/gbvm/blob/master/include/vm.i">GBVM source file</a></li>
+  <li><a href="https://gist.github.com/pau-tomas/92b0ad77506088d184a654af226f5b7d">GBVM Command Reference</a></li>
+  <li><a href="https://gbstudiocentral.com/tips/understanding-gbvm/">GB Studio Central - Understanding GBVM</a></li>
+</ol>
 
 <div>
 <h3>1.0. Basic Tile Swapping</h3>
@@ -100,6 +110,8 @@ And just like that we have swapped the tile
 <div>
   <h3>1.1. Animating a tile</h3>
 
+  <img src="/help/AnimatedTiles.1.2.gif" />
+  
   <p>
     By using a loop we can animate a tile.<br/>
     This done by referencing the next tile in the tileset.<br/>
@@ -133,6 +145,7 @@ And just like that we have swapped the tile
 
 <div>
   <h3>1.3. Update a single tile</h3>
+  <img src="/help/AnimatedTiles.1.3.gif" />
   <p>
     If you want to change a single tile, it must be unique in the source artwork.<br/>
     Tiles 1, 2 and 3 are unqiue. Even if tile 1 is replaced with 2 or 3 from the tileset, it started with a different memory address. So it remains unique.<br/>
@@ -142,6 +155,8 @@ And just like that we have swapped the tile
 <div>
   <h3>1.4. Update a multiple unique tile</h3>
 
+  <img src="/help/AnimatedTiles.1.4.gif" />
+  
   <p>
     If you want to animate more than unique tiles, you need to replace each individually.<br/>
     In this example we will use the staggered animation to highlight the effect.
