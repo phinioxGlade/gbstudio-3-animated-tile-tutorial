@@ -53,11 +53,10 @@
   
   <i>Future versions of GBStudio will allow you to get the TILEDATA_BANK and TILEDATA from within the UI</i>
 </p>
-  Now for the fun bit :)<br/>  
-</p>
-</p>
   Now for the fun bit :)<br/>
   We will swap the tile at X=14 Y=9 with tile in _tileset_0 at index 57, tile X=17 Y=2 in the !letters scene
+  
+  <img src="/help/Slide1.png" width="50%" />
 </p>
 
   <h4>GBVM Script Example</h4>
@@ -76,6 +75,22 @@ VM_REPLACE_TILE_XY 14, 9, ___bank_tileset_0, _tileset_0, .ARG0
 ; free memory assigned to .ARG0
 VM_POP 1
 
+; end of GBVM script
+</pre>
+
+And just like that we have swapped the tile
+</div>
+</p>
+ Now we will replace the same tile with tile in !waterfall tileset at index 2
+ <img src="/help/Slide2.png" width="50%" />
+</p>
+
+<h4>GBVM Script Example</h4>
+<pre>
+; start of GBVM script
+VM_PUSH_CONST 2
+VM_REPLACE_TILE_XY 14, 9, ___bank_tileset_0, _tileset_1, .ARG0
+VM_POP 1
 ; end of GBVM script
 </pre>
 
