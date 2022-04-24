@@ -1,37 +1,42 @@
-<h1>GB Studio 3.0.3 Animated Tiles Tutorial</h1>
+<h1>GB Studio Tutorial - Animated Tiles</h1>
 
 <img src="/help/AnimatedTiles.1.4.gif" />
 
-<p>
-  This is a basic interactive how-to tutorial for animated background tiles in GBStudio 3. The source code was built using with GBS 3.0.3.<br/>
-  This tutorial based on NalaFala (Yousurname)'s <a href="https://gist.github.com/Y0UR-U5ERNAME/b1cdf7f3afff6c14dfa557dc5e6b1572">Background Tile Swapping Guide for GB Studio 3</a><br/>
-  But I've dumbed it down a bit for people new to GBVM, like me :)
-  
-  You can play the interactive version at <a href="https://phinioxglade.itch.io/gbstudio-3-animated-tile-tutorial">https://phinioxglade.itch.io/gbstudio-3-animated-tile-tutorial</a>
-  <br/>
-  <h3>We will cover the following 5 key ascepts of tile swap: </h3>
-  <ul>
-    <li>1.0. Basic Tile Swapping</li>
-    <li>1.1. Animating a tile</li>
-    <li>1.2. Impact of replacing tile</li>
-    <li>1.3. Update a single tile</li>
-    <li>1.4. Update a multiple unique tile</li>
-  </ul>
-  
-   <h3>Additionally we will cover GBVM script features: </h3>
-  <ul>
-    <li>Accessing global variables</li>
-    <li>Set varaibles</li>
-    <li>Adding a value to a variable</li>
-  </ul>
-</p>
+This is a basic interactive how-to tutorial for animated background tiles in GBStudio 3. The source code was built using with GBS 3.0.3.
 
-<h3>Useful Resources:</h3>
-<ol>
-  <li><a href="https://github.com/untoxa/gbvm/blob/master/include/vm.i">GBVM source file</a></li>
-  <li><a href="https://gist.github.com/pau-tomas/92b0ad77506088d184a654af226f5b7d">GBVM Command Reference</a></li>
-  <li><a href="https://gbstudiocentral.com/tips/understanding-gbvm/">GB Studio Central - Understanding GBVM</a></li>
-</ol>
+This tutorial based on NalaFala (Yousurname)'s <a href="https://gist.github.com/Y0UR-U5ERNAME/b1cdf7f3afff6c14dfa557dc5e6b1572">Background Tile Swapping Guide for GB Studio 3</a><br/>
+But I've dumbed it down a bit for people new to GBVM, like me :)
+
+### GB Studio Tutorials:
+
+- [1.0 - Animated Tiles](https://github.com/phinioxGlade/gbstudio-3-animated-tile-tutorial) &lt; This Tutorial
+- [2.0 - Background Sprites](https://github.com/phinioxGlade/gbstudio-background-sprites-tutorial)
+
+### Play in your Browser
+You can play the interactive version at <a href="https://phinioxglade.itch.io/gbstudio-3-animated-tile-tutorial">https://phinioxglade.itch.io/gbstudio-3-animated-tile-tutorial</a>
+
+<h3>We will cover the following 5 key ascepts of tile swap: </h3>
+<ul>
+  <li><a href="#10-basic-tile-swapping">1.0 - Basic Tile Swapping</a></li>
+  <li><a href="#11-animating-a-tile">1.1 - Animating a tile</a></li>
+  <li><a href="#12-impact-of-replacing-tile">1.2 - Impact of replacing tile</a></li>
+  <li><a href="#13-update-a-single-tile">1.3 - Update a single tile</a></li>
+  <li><a href="#14-update-a-multiple-unique-tile">1.4 - Update a multiple unique tile</a></li>
+</ul>
+  
+<h3>Additionally we will cover GBVM script features: </h3>
+<ul>
+  <li>Accessing global variables</li>
+  <li>Set varaibles</li>
+  <li>Adding a value to a variable</li>
+</ul>
+
+### Useful Resources
+
+- <a href="https://github.com/untoxa/gbvm/blob/master/include/vm.i">GBVM source file</a>
+- <a href="https://gist.github.com/pau-tomas/92b0ad77506088d184a654af226f5b7d">GBVM Command Reference</a>
+- <a href="https://gbstudiocentral.com/tips/understanding-gbvm/">GB Studio Central - Understanding GBVM</a>
+- <a href="https://docs.google.com/spreadsheets/d/1d2F5hSEMt6nkacw-qVnYlT3IPHqmCCaLFhRboC5xxc0/edit#gid=0">GB Studio Plug-In Database</a>
 
 <div>
 <h3>1.0. Basic Tile Swapping</h3>
